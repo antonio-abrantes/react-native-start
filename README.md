@@ -27,3 +27,4 @@ Converter para TypeScript -> https://reactnative.dev/docs/typescript
  Dependencias
 	yarn add -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
 	
+Ctrl + m => Abrir menu de debug

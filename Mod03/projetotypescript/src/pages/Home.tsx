@@ -26,6 +26,8 @@ const Home = () => {
       name: newSkill
     }
 
+    console.log(data);
+
     if (newSkill.length > 0) {
       setMySkills(oldState => [...oldState, data]);
     }
