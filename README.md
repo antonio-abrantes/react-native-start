@@ -17,10 +17,13 @@ Acesso a api: Android
 	adb reverse tcp:3333 tcp:3333
 	
 	
-Converter para TypeScript
+Converter para TypeScript -> https://reactnative.dev/docs/typescript
 	Rename App.js -> App.tsx
 	create tsconfig.json in root
 		https://github.com/expo/expo/blob/master/templates/expo-template-blank-typescript/tsconfig.json
 	yarn add --dev  @types/react @types/react-native @types/react-dom
 	npm i  --dev  @types/react @types/react-native @types/react-dom
+	
+ Dependencias
+	yarn add -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
 	
