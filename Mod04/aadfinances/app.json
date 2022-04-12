@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "aadfinances",
+    "slug": "aadfinances",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
