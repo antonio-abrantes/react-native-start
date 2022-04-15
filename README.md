@@ -13,6 +13,14 @@
 	```
 	expor start
 	```
+	##### Instalar fontes
+```
+	expo install expo-font @expo-google-fonts/nome-fonte
+```
+ ##### Tela de loading
+```
+	expo install expo-app-loading
+```
 
 ### Anotações - React CLI
 - Criar projeto
