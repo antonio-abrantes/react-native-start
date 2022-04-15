@@ -13,11 +13,11 @@
 	```
 	expor start
 	```
-	##### Instalar fontes
+##### Instalar fontes
 ```
 	expo install expo-font @expo-google-fonts/nome-fonte
 ```
- ##### Tela de loading
+##### Tela de loading
 ```
 	expo install expo-app-loading
 ```
@@ -54,12 +54,15 @@ npm i  --dev  @types/react @types/react-native @types/react-dom
 yarn add -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
 ```
 ## Dependências extras
-- Styled Components
+- [Styled Components](https://github.com/styled-components/styled-components)
 	```
 	yarn add styled-components
 	yarn add @types/styled-components-react-native -D
 	```
-
+- [React Native WebView](https://github.com/react-native-webview/react-native-webview)
+	```
+	expo install react-native-webview
+	```
 ## Dicas extras
 
 #### Listar avds disponiveis
