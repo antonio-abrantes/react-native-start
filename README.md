@@ -59,6 +59,10 @@ yarn add -D typescript @types/jest @types/react @types/react-native @types/react
 	yarn add styled-components
 	yarn add @types/styled-components-react-native -D
 	```
+- [React-native-responsive-fontsize](https://www.npmjs.com/package/react-native-responsive-fontsize)
+```
+	yarn add react-native-responsive-fontsize
+```
 - [React Native WebView](https://github.com/react-native-webview/react-native-webview)
 	```
 	expo install react-native-webview
