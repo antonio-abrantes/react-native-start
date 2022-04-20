@@ -31,14 +31,14 @@ export const CardInfo = styled.View`
 `;
 
 export const Amount = styled.Text<TypeProps>`
-  font-size: ${RFValue(32)};
+  font-size: ${RFValue(32)}px;
   font-family: ${({ theme }) => theme.fonts.medium};
   color: ${({ theme, type }) => type === 'total' ? theme.colors.shape : theme.colors.text_dark};
   margin-top: 38px;
 `;
 
 export const LastTransaction = styled.Text<TypeProps>`
-  font-size: ${RFValue(12)};
+  font-size: ${RFValue(12)}px;
   font-family: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme, type }) => type === 'total' ? theme.colors.shape : theme.colors.text};
 `;

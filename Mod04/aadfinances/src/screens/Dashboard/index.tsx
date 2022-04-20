@@ -1,6 +1,6 @@
 import React from "react";
 import { HighlightCard } from "../../components/HighlightCard";
-
+import { TransactionCard, TransactionCardProps } from "../../components/TransactionCard";
 
 import {
   Container,
@@ -14,9 +14,63 @@ import {
   UserName,
   IconPower,
   HighlightCardsList,
+  Transactions,
+  TransactionList,
 } from "./styles";
 
+export interface DataListProps extends TransactionCardProps{
+  id: string;
+} 
+
 export function Dashboard() {
+  const data: DataListProps[] = [
+    {
+      id: '1',
+      type: 'positive',
+      title: "Desenvolvimento de Site",
+      amount: "12.700,00",
+      category: {
+        name: "Dolar",
+        icon: "dollar-sign",
+      },
+      date: "19/04/2022",
+    },
+    {
+      id: '2',
+      type: 'negative',
+      title: "Aluguel",
+      amount: "1.200,00",
+      category: {
+        name: "Dolar",
+        icon: "coffee",
+      },
+      date: "12/04/2022",
+    },
+    {
+      id: '3',
+      type: 'negative',
+      title: "Jantar",
+      amount: "270,00",
+      category: {
+        name: "Dolar",
+        icon: "shopping-bag",
+      },
+      date: "12/04/2022",
+    }
+    ,
+    {
+      id: '4',
+      type: 'positive',
+      title: "Jantar",
+      amount: "270,00",
+      category: {
+        name: "Dolar",
+        icon: "shopping-bag",
+      },
+      date: "12/04/2022",
+    }
+  ];
+
   return (
     <Container>
       <Header>
@@ -32,7 +86,7 @@ export function Dashboard() {
               <UserName>Antônio</UserName>
             </User>
           </UserInfo>
-          <IconPower name="power"/>
+          <IconPower name="power" />
         </UserWrapper>
       </Header>
       <HighlightCardsList>
@@ -55,8 +109,19 @@ export function Dashboard() {
           type="total"
         />
       </HighlightCardsList>
+
+      <Transactions>
+        <Title>Listagem</Title>
+
+        <TransactionList // @ts-ignore
+          data={data}    // @ts-ignore
+          keyExtractor={item => item.id} // @ts-ignore
+          renderItem={({ item }) => <TransactionCard data={item}/>}
+        />
+
+      </Transactions>
     </Container>
   );
 }
 
-// Aula 11
+// Aula 15
