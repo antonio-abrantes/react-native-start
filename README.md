@@ -21,7 +21,17 @@
 ```
 	expo install expo-app-loading
 ```
+##### Navegação e formulários
 
+##### Modal - Caso os eventos não funcionem no Android, usar:
+```
+	expo install react-native-gesture-handler
+```
+```
+		import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
+		export const Container = styled.View => export const Container = styled(GestureHandlerRootView)
+```
 ### Anotações - React CLI
 - Criar projeto
 	```
